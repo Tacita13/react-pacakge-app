@@ -10,17 +10,24 @@ React + Express + SQlite3
 
 First clone this repository.
 ```bash
-$ git clone ```
+$ git clone https://github.com/Tacita13/react-pacakge-app.git
+```
 
 Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
+
 ```bash
 $ npm install # or yarn
 ```
 
 Run it
 ```bash
-$ npm start # or yarn start
+$ npm start # or yarn start  (port 3000)
+$ cd src/
+$ node server.js # or nodemon (port 5000)
 ```
+
+# DB connection
+Given the time constraint I was unable to finish connecting to a db and creating the table to hold the package data via sqlite3. The creation of a new package only render a small quick message for a successful submission
 
 # Authentication
 To add user authentication to this react app we can use Auth0 using Context and Hooks
